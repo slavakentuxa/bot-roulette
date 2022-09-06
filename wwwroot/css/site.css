@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.text-center {
+  min-height: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.timer__line {
+
+}
+
+.timer__body {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.timer__counter {
+  animation: counter 4s steps(36, end) forwards;
+}
+
+.timer__counter span {
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  color: red;
+}
+
+@keyframes counter {
+  0% {
+  }
+  100% {
+    transform: translate(0px, -5400px);
+  }
+}
